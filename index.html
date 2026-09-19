@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankita Meghanathi | MERN Stack Developer</title>
+  <meta name="description" content="Ankita Meghanathi — BCA Student & MERN Stack Developer Intern based in Junagadh, Gujarat. Crafting modern, scalable, and responsive web applications." />
+  <meta name="keywords" content="Ankita Meghanathi, MERN Stack Developer, React.js, Node.js, Express.js, MongoDB, Junagadh Developer, BCA Student" />
+  <meta name="author" content="Ankita Meghanathi" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ankita Meghanathi | MERN Stack Developer" />
+  <meta property="og:description" content="Building modern, responsive and user-focused web experiences with the MERN stack." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/Justyyyankita136" />
+
+  <!-- Fonts: Syne & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">ANKITA<span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#" id="navResumeBtn" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+            <span>Resume</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal" id="heroBadge">
+            <span class="pulse-dot-green"></span>
+            <span id="heroAvailability">Available for Opportunities</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name gradient-text" id="heroName">ANKITA MEGHANATHI</span>
+          </h1>
+
+          <div class="hero-role-meta reveal">
+            <span class="role-chip" id="heroTitle">MERN Stack Developer</span>
+            <span class="location-chip" id="heroLocation"><i class="fa-solid fa-location-dot"></i> Junagadh, Gujarat, India</span>
+          </div>
+
+          <p class="hero-desc reveal" id="heroTagline">
+            Building modern, responsive and user-focused web experiences with the MERN stack.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#" id="heroResumeBtn" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>Download Resume</span>
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Let's Connect</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <span class="socials-label">Socials:</span>
+            <div class="social-links" id="heroSocials">
+              <!-- Rendered Dynamically from data.js -->
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-frame">
+              <img id="heroProfileImg" src="" alt="Ankita Meghanathi" class="avatar-img" />
+            </div>
+
+            <!-- Floating Tech Chips -->
+            <div class="float-chip chip-react" aria-hidden="true">
+              <i class="fa-brands fa-react fa-spin-slow"></i>
+              <span>React</span>
+            </div>
+            <div class="float-chip chip-js" aria-hidden="true">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="float-chip chip-node" aria-hidden="true">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="float-chip chip-mongo" aria-hidden="true">
+              <i class="fa-solid fa-database"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="float-chip chip-git" aria-hidden="true">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Visual & Dynamic Stats -->
+          <div class="about-left reveal">
+            <div class="about-card-visual glass-card">
+              <div class="about-photo-wrapper">
+                <img id="aboutProfileImg" src="" alt="Ankita Meghanathi" class="about-photo" />
+              </div>
+              <div class="about-education-box" id="aboutEducationContainer">
+                <!-- Injected via JavaScript from data.education -->
+              </div>
+            </div>
+
+            <div class="quick-stats-grid" id="aboutStatsContainer">
+              <!-- Injected via JavaScript from data.about.stats -->
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative & Highlights -->
+          <div class="about-right reveal">
+            <h3 class="about-heading" id="aboutHeading">Passionate Developer</h3>
+            <div class="about-paragraphs" id="aboutBioContainer">
+              <!-- Injected via JavaScript from data.about.bioParagraphs -->
+            </div>
+
+            <div class="about-highlights-card glass-card">
+              <h4 class="highlights-title"><i class="fa-solid fa-code-commit"></i> Development Philosophy</h4>
+              <ul class="highlights-list" id="aboutHighlightsContainer">
+                <!-- Injected via JavaScript from data.about.highlights -->
+              </ul>
+            </div>
+
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">
+                <span>Hire / Collaborate</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#" id="aboutResumeBtn" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Get Full Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Technical Capabilities</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="title-bar"></div>
+          <p class="section-desc">Modular frontend, backend, and data architectures I use to ship production-ready applications.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsContainer">
+          <!-- Dynamically Injected from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Practical Journey</span>
+          <h2 class="section-title">Internship & Experience</h2>
+          <div class="title-bar"></div>
+          <p class="section-desc">Hands-on software development inside fast-paced engineering teams.</p>
+        </div>
+
+        <div class="timeline-container" id="experienceContainer">
+          <!-- Dynamically Injected from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECT: WORKSPHERE ==================== -->
+    <section class="featured-section section" id="featured-showcase">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Project Spotlight</span>
+          <h2 class="section-title">WorkSphere</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div id="worksphereContainer">
+          <!-- Injected via JavaScript from data.projects (featured: true) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Portfolio Catalog</span>
+          <h2 class="section-title">Projects</h2>
+          <div class="title-bar"></div>
+          <p class="section-desc">Practical, responsive web applications built with modern frontend and full-stack stacks.</p>
+        </div>
+
+        <!-- Dynamic Category Filters -->
+        <div class="projects-filter-bar reveal" id="projectsFilterBar">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamically Injected from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY WORK WITH ME ==================== -->
+    <section class="strengths section" id="strengths">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Core Value</span>
+          <h2 class="section-title">Why Work With Me</h2>
+          <div class="title-bar"></div>
+          <p class="section-desc">Key personal and professional attributes that define my engineering approach.</p>
+        </div>
+
+        <div class="strengths-grid" id="strengthsContainer">
+          <!-- Dynamically Injected from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES SECTION ==================== -->
+    <section class="certificates section" id="certificates">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Accreditations</span>
+          <h2 class="section-title">Certificates</h2>
+          <div class="title-bar"></div>
+          <p class="section-desc">Verified credentials and practical development workshops.</p>
+        </div>
+
+        <div class="certificates-grid" id="certificatesContainer">
+          <!-- Dynamically Injected from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-sub">Reach Out</span>
+          <h2 class="section-title">Let's Build Something Great Together.</h2>
+          <div class="title-bar"></div>
+          <p class="section-desc">Have a role, project idea, or just want to chat tech? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Dynamic Contact Info Channels -->
+          <div class="contact-info-panel reveal" id="contactInfoPanel">
+            <!-- Dynamically Injected from data.js -->
+          </div>
+
+          <!-- Contact Form with Validation -->
+          <div class="contact-form-panel glass-card reveal">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">I typically respond within 24 hours.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName">Your Name <span class="req">*</span></label>
+                <div class="input-box">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="formName" name="name" placeholder="Ankita Meghanathi" required />
+                </div>
+                <small class="error-text" id="nameError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail">Your Email <span class="req">*</span></label>
+                <div class="input-box">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="formEmail" name="email" placeholder="you@example.com" required />
+                </div>
+                <small class="error-text" id="emailError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject">Subject <span class="req">*</span></label>
+                <div class="input-box">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="formSubject" name="subject" placeholder="Project Inquiry / Job Opportunity" required />
+                </div>
+                <small class="error-text" id="subjectError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage">Message <span class="req">*</span></label>
+                <div class="input-box text-box">
+                  <textarea id="formMessage" name="message" rows="5" placeholder="Hi Ankita, I'd like to discuss a project..." required></textarea>
+                </div>
+                <small class="error-text" id="messageError"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-mark">A</span>
+            <span class="logo-text" id="footerName">ANKITA MEGHANATHI</span>
+          </a>
+          <p class="footer-title-desc" id="footerTitle">MERN Stack Developer</p>
+          <p class="footer-quote">"Building modern, responsive and user-focused web experiences."</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-social-links" id="footerSocials">
+            <!-- Injected via JavaScript from data.js -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 <span id="footerCopyName">Ankita Meghanathi</span>. All rights reserved.</p>
+        <p class="footer-build-tag">Engineered with Core HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP & TOAST ==================== -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- 1. DATA SOURCE (Configurable) -->
+  <script src="css/js/data.js"></script>
+
+  <!-- 2. APPLICATION LOGIC & RENDER ENGINE -->
+  <script src="css/js/script.js"></script>
+</body>
+</html>
