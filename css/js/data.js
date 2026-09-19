@@ -155,7 +155,7 @@ const portfolioData = {
       subtitle: "Student Housing Explorer",
       category: "React",
       statusBadge: "Completed",
-      image: "assets/projects/campusnest.png",
+      image: "assests/projects/net.png",
       description: "A responsive accommodation discovery website designed for students to explore PG rooms, amenities, pricing, and contact hosts seamlessly.",
       technologies: ["React.js", "JavaScript", "CSS3", "React Router"],
       features: [
@@ -189,21 +189,21 @@ const portfolioData = {
     },
     {
       id: 4,
-      title: "Personal Portfolio Website",
-      subtitle: "Developer Showcase",
-      category: "HTML/CSS/JS",
-      statusBadge: "Live",
-      image: "assets/images/projects/portfolio.png",
-      description: "A modern, highly performant developer portfolio built with pure HTML5, CSS3, and JavaScript featuring data-driven architecture and smooth interactions.",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
+      title: "Simple React Calculator",
+      subtitle: "Interactive Web Calculator",
+      category: "React",
+      statusBadge: "Completed",
+      image: "assests/projects/cal.png", // અથવા તમારો ઈમેજ પાથ
+      description: "A clean and responsive standard calculator web application built with React.js for performing core arithmetic operations with dynamic state management.",
+      technologies: ["React.js", "JavaScript", "CSS3"],
       features: [
-        "Completely data-driven with data.js",
-        "Smooth scroll and active section spy",
-        "Client-side form validation",
-        "Zero external framework dependencies"
+        "Basic arithmetic operations (+, -, *, /)",
+        "Real-time calculation display and result evaluation",
+        "Clear (C), backspace, and reset functionality",
+        "Modern keypad layout with responsive button grid"
       ],
-      github: "https://github.com/Justyyyankita136",
-      liveDemo: "#home",
+      github: "", // અહીં તમારી GitHub લિંક મૂકી શકો છો
+      liveDemo: "", // જો હોસ્ટ કરેલું હોય તો અહીં ડેમો લિંક મૂકી શકો છો
       featured: false
     },
     {
@@ -212,7 +212,7 @@ const portfolioData = {
       subtitle: "Auth Flow & Local Storage",
       category: "HTML/CSS/JS",
       statusBadge: "Completed",
-      image: "assets/images/projects/login-system.png",
+      image: "assests/projects/login.png",
       description: "A frontend security and authentication interface supporting user registration, secure login validation, and persistent sessions via Local Storage.",
       technologies: ["HTML5", "Bootstrap", "JavaScript", "Local Storage"],
       features: [
@@ -231,7 +231,7 @@ const portfolioData = {
       subtitle: "Real Estate & Tenant Tracker",
       category: "HTML/CSS/JS",
       statusBadge: "Completed",
-      image: "assets/images/projects/property-management.png",
+      image: "assests/projects/home.png",
       description: "A responsive property management interface for cataloging real estate inventory, tracking tenant details, and recording monthly rent receipts.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       features: [
